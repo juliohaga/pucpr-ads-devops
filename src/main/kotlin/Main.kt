@@ -7,7 +7,7 @@ fun main() {
     val aluno = "Julio H."
     val instituicao = Curso.instituicao()
     val curso = Curso.getName()
-    val nota = Nota(0.0, 0.0, 0.0, 0.0).getMedia()
+    val nota = Disciplina.Nota(0.0, 0.0, 0.0, 0.0).getMedia()
     val disciplina = Disciplina("DevOps", "Felipe Elias")
 
     println("Aluno: $aluno\n" +
