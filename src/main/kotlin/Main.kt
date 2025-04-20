@@ -5,8 +5,8 @@ package org.example
 fun main() {
 
     val aluno = "Julio H."
-    val instituicao = "Pontifícia Universidade Católica do Paraná"
-    val curso = "Análise e Desenvolvimento de Sistemas"
+    val instituicao = Curso.instituicao()
+    val curso = Curso.getName()
     val nota = Nota(0.0, 0.0, 0.0, 0.0).getMedia()
     val disciplina = Disciplina("DevOps", "Felipe Elias")
 
