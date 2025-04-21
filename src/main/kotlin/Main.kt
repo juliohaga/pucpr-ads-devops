@@ -8,6 +8,5 @@ fun main() {
     val nota = Disciplina.Nota(0.0, 0.0, 0.0, 0.0).getMedia()
     val disciplina = Disciplina("DevOps", "Felipe Elias")
 
-    println("Aluno: $aluno \nInstituição: $instituicao \nCurso: $curso \nDisciplina: ${disciplina.nome} \nProfessor: ${disciplina.professor} \nNota do Aluno: $nota")
-
+    println("Aluno: $aluno \nInstituição: $instituicao \nCurso: $curso \nDisciplina: ${disciplina.nome} \nProfessor: ${disciplina.professor} \nNota do Aluno: $nota\n")
 }
