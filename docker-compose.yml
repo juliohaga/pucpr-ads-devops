@@ -1,0 +1,22 @@
+version: "3.8"
+services:
+  app:
+    build: .
+    container_name: app-container
+    ports:
+      - "8080:8080"  # Mapeando a porta 8080 (ajuste se sua aplicação usar outra porta)
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql-db:3306/mydb  # Ajuste conforme o banco de dados
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=rootpassword
+    depends_on:
+      - mysql-db
+
+  mysql-db:
+    image: mysql:latest  # Usando a imagem oficial do MySQL
+    container_name: mysql-db
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: mydb
+    ports:
+      - "3306:3306"  # Expondo a porta do MySQL para conectar de fora do container

@@ -1,8 +1,12 @@
 package org.example
 
 fun main() {
+    // Criando uma instância do gerenciador MySQL
+    val mysqlManager = MySQLManager()
 
-    val aluno = "Julio H."
+    // Pegando o nome do aluno do MySQL
+    val aluno = mysqlManager.getAlunoNome()
+
     val instituicao = Curso.instituicao()
     val curso = Curso.getName()
     val nota = Disciplina.Nota(0.0, 0.0, 0.0, 0.0).getMedia()
