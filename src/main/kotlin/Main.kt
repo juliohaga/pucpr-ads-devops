@@ -1,7 +1,5 @@
 package org.example
 
-
-
 fun main() {
 
     val aluno = "Julio H."
@@ -10,10 +8,5 @@ fun main() {
     val nota = Disciplina.Nota(0.0, 0.0, 0.0, 0.0).getMedia()
     val disciplina = Disciplina("DevOps", "Felipe Elias")
 
-    println("Aluno: $aluno\n" +
-            "Instituição: $instituicao\n" +
-            "Curso: $curso\n" +
-            "Disciplina: ${disciplina.nome}\n" +
-            "Professor: ${disciplina.professor}\n" +
-            "Nota do Aluno: $nota")
+    println("Aluno: $aluno \nInstituição: $instituicao \nCurso: $curso \nDisciplina: ${disciplina.nome} \nProfessor: ${disciplina.professor} \nNota do Aluno: $nota\n")
 }
