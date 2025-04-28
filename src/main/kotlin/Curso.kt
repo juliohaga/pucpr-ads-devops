@@ -5,7 +5,7 @@ class Curso {
     companion object {
 
         fun instituicao(): String {
-            return "PUCPR"
+            return "PUC-PR"
         }
 
         fun getName(): String {
