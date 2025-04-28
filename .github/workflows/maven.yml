@@ -10,7 +10,9 @@ permissions:
   contents: read
   id-token: write
   actions: read
+  packages: read
   security-events: write
+
 
 jobs:
   build:
