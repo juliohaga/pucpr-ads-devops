@@ -4,7 +4,7 @@ import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 
-class Test {
+class DisciplinaTest {
 
     private var somativa1: Double = 0.0
     private var somativa2: Double = 0.0
