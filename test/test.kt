@@ -54,7 +54,7 @@ class DisciplinaTest {
     }
 
     @Test
-    fun testNotaComSubstitutivaMaior() {
+    fun testNotaComSubstitutiva() {
         substitutiva = 5.0
         mediaEsperada = 2.0
         nota = Disciplina.Nota(somativa1, somativa2, avaliacao, substitutiva)
